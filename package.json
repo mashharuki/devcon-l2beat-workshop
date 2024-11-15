@@ -1,0 +1,11 @@
+{
+  "name": "devcon-l2beat-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mashharuki/devcon-l2beat-workshop",
+  "author": "Haruki Kondo <44923695+mashharuki@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@mradomski/discovery": "^0.50.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "chain": "ethereum", // chain sanity check
+    "name": "zora",      // project sanity check
+  
+    // Addresses of contracts in which we're going to start crawling
+    "initialAddresses": [
+      "0x3e2Ea9B92B7E48A52296fD261dc26fd995284631" // L1StandardBridge
+    ]
+}
