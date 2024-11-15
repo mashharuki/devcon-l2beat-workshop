@@ -21,11 +21,16 @@ devcon-l2beat-workshop
 - 初期コントラクトから見つけられたすべてのコントラクトの情報を取得する
 
     ```bash
-    npx discovery discover ethereum zora
+    npx discovery discover ethereum zora 
     ```
 
     そうすると、`.flat`ディレクトリや `discovered.json`が生成される。
 
+    `--dev` オプションをつけると再スキャンが早くなる。
+
+    ```basg
+    npx discovery discover ethereum zora --dev
+    ```
 
 
 ### 参考文献

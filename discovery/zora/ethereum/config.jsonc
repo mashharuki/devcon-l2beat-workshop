@@ -23,6 +23,16 @@
       },
       "0x0454092516c9A4d636d3CAfA1e82161376C8a748": {
         "ignoreMethods": ["getRequiredThreshold"]
+      },
+      "0x09f7150D8c019BeF34450d6920f6B3608ceFdAf2": {
+        "isVitalikAnOwner": { // a new you want this field to have
+          "handler": {        // define the handler
+            "type": "call",   // choose the handler type
+            // handler specific configuration
+            "method": "function isOwner(address owner) view returns (bool)",
+            "args": ["0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"]
+          }
+        }
       }
     }
 }
