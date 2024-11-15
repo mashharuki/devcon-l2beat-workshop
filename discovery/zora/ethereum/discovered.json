@@ -1,8 +1,8 @@
 {
   "name": "zora",
   "chain": "ethereum",
-  "blockNumber": 21190420,
-  "configHash": "0xae71b3d11584384405014a0dd3c0d4297c8fcfd5b6f78702c255237c0d2ded7a",
+  "blockNumber": 21190492,
+  "configHash": "0x3ce4bd3f80c10e6a9adc2b41928bee75668f408e3c69ee05675b61de12f36408",
   "contracts": [
     {
       "name": "LivenessModule",
@@ -14,7 +14,6 @@
       "values": {
         "$immutable": true,
         "fallbackOwner": "0x847B5c174615B1B7fDF770882256e2D3E95b9D92",
-        "getRequiredThreshold": [0, 1, 2, 3, 3],
         "livenessGuard": "0x24424336F04440b1c28685a38303aC33C9D14a25",
         "livenessInterval": 8467200,
         "minOwners": 8,
@@ -22,8 +21,7 @@
         "safe": "0xc2819DC788505Aac350142A7A707BF9D03E3Bd03",
         "thresholdPercentage": 75,
         "version": "1.2.0"
-      },
-      "errors": { "getRequiredThreshold": "Processing error occurred." }
+      }
     },
     {
       "name": "GnosisSafe",
@@ -88,22 +86,20 @@
         "$upgradeCount": 3,
         "guardian": "0x09f7150D8c019BeF34450d6920f6B3608ceFdAf2",
         "GUARDIAN": "0x09f7150D8c019BeF34450d6920f6B3608ceFdAf2",
-        "isOutputFinalized": [true, true, true, true, true],
         "L2_ORACLE": "0x9E6204F750cD866b299594e2aC9eA824E2e5f95c",
         "l2Oracle": "0x9E6204F750cD866b299594e2aC9eA824E2e5f95c",
         "l2Sender": "0x000000000000000000000000000000000000dEaD",
         "params": {
           "prevBaseFee": 1000000000,
           "prevBoughtGas": 489262,
-          "prevBlockNum": 21190125
+          "prevBlockNum": 21190481
         },
         "paused": false,
         "superchainConfig": "0x95703e0982140D16f8ebA6d158FccEde42f04a4C",
         "SYSTEM_CONFIG": "0xA3cAB0126d5F504B071b81a3e8A2BBBF17930d86",
         "systemConfig": "0xA3cAB0126d5F504B071b81a3e8A2BBBF17930d86",
         "version": "2.5.0"
-      },
-      "errors": { "isOutputFinalized": "Processing error occurred." }
+      }
     },
     {
       "name": "LivenessGuard",
@@ -449,66 +445,8 @@
         "$upgradeCount": 5,
         "challenger": "0xcA4571b1ecBeC86Ea2E660d242c1c29FcB55Dc72",
         "CHALLENGER": "0xcA4571b1ecBeC86Ea2E660d242c1c29FcB55Dc72",
-        "computeL2Timestamp": [
-          1686693839, 1686693841, 1686693843, 1686693845, 1686693847
-        ],
         "FINALIZATION_PERIOD_SECONDS": 604800,
         "finalizationPeriodSeconds": 604800,
-        "getL2Output": [
-          [
-            "0xe2b53b49aa6a700002203a39f34312d6d7929b439767ad550f5481d5e2194f4a",
-            1686697163,
-            180
-          ],
-          [
-            "0xab36452f96378a535f64d17c30f6451720b96626fef97d2db903d28fc87b1638",
-            1686697199,
-            360
-          ],
-          [
-            "0x4906b81f9d98cb78c7f32b25c9c83572eaf0470c5b20cd620e8a247316692ad1",
-            1686697211,
-            540
-          ],
-          [
-            "0x6fc1320df03f611102ff57c0985816262320b554ddfd7eaa8285839604bf14ad",
-            1686697235,
-            720
-          ],
-          [
-            "0x88c2d544fd07bf2f5309e815271400d4858009110286bafe280290df0e087252",
-            1686697247,
-            900
-          ]
-        ],
-        "getL2OutputAfter": [
-          [
-            "0xe2b53b49aa6a700002203a39f34312d6d7929b439767ad550f5481d5e2194f4a",
-            1686697163,
-            180
-          ],
-          [
-            "0xe2b53b49aa6a700002203a39f34312d6d7929b439767ad550f5481d5e2194f4a",
-            1686697163,
-            180
-          ],
-          [
-            "0xe2b53b49aa6a700002203a39f34312d6d7929b439767ad550f5481d5e2194f4a",
-            1686697163,
-            180
-          ],
-          [
-            "0xe2b53b49aa6a700002203a39f34312d6d7929b439767ad550f5481d5e2194f4a",
-            1686697163,
-            180
-          ],
-          [
-            "0xe2b53b49aa6a700002203a39f34312d6d7929b439767ad550f5481d5e2194f4a",
-            1686697163,
-            180
-          ]
-        ],
-        "getL2OutputIndexAfter": [0, 0, 0, 0, 0],
         "L2_BLOCK_TIME": 2,
         "l2BlockTime": 2,
         "latestBlockNumber": 22471380,
@@ -522,12 +460,6 @@
         "SUBMISSION_INTERVAL": 1800,
         "submissionInterval": 1800,
         "version": "1.8.0"
-      },
-      "errors": {
-        "computeL2Timestamp": "Processing error occurred.",
-        "getL2Output": "Processing error occurred.",
-        "getL2OutputAfter": "Processing error occurred.",
-        "getL2OutputIndexAfter": "Processing error occurred."
       }
     },
     {
@@ -872,7 +804,7 @@
         ],
         "$upgradeCount": 4,
         "MESSAGE_VERSION": 1,
-        "messageNonce": "1766847064778384329583297500742918515827483896875618958121606201292626250",
+        "messageNonce": "1766847064778384329583297500742918515827483896875618958121606201292626251",
         "MIN_GAS_CALLDATA_OVERHEAD": 16,
         "MIN_GAS_DYNAMIC_OVERHEAD_DENOMINATOR": 63,
         "MIN_GAS_DYNAMIC_OVERHEAD_NUMERATOR": 64,
@@ -889,8 +821,7 @@
         "ResolvedDelegateProxy_implementationName": "OVM_L1CrossDomainMessenger",
         "superchainConfig": "0x95703e0982140D16f8ebA6d158FccEde42f04a4C",
         "version": "2.3.0"
-      },
-      "errors": { "xDomainMessageSender": "Processing error occurred." }
+      }
     },
     {
       "name": "Lib_AddressManager",

@@ -5,5 +5,24 @@
     // Addresses of contracts in which we're going to start crawling
     "initialAddresses": [
       "0x3e2Ea9B92B7E48A52296fD261dc26fd995284631" // L1StandardBridge
-    ]
+    ],
+    "overrides": {
+      "0xdC40a14d9abd6F410226f1E6de71aE03441ca506": {
+        "ignoreMethods":["xDomainMessageSender"]
+      },
+      "0x1a0ad011913A150f69f6A19DF447A0CfD9551054": {
+        "ignoreMethods": ["isOutputFinalized"]
+      },
+      "0x9E6204F750cD866b299594e2aC9eA824E2e5f95c": {
+        "ignoreMethods": [
+          "computeL2Timestamp",
+          "getL2Output",
+          "getL2OutputAfter",
+          "getL2OutputIndexAfter"
+        ]
+      },
+      "0x0454092516c9A4d636d3CAfA1e82161376C8a748": {
+        "ignoreMethods": ["getRequiredThreshold"]
+      }
+    }
 }
